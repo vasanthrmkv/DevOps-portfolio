@@ -1,0 +1,56 @@
+# 🏥 Meril Life — Healthcare Platform Automation
+
+**Role:** DevOps Engineer  
+**Duration:** Jan 2022 – Dec 2023  
+**Domain:** Healthcare Manufacturing  
+**Tools:** AWS, Jenkins, Docker, Terraform, Kubernetes, Prometheus, Grafana, SonarQube  
+
+---
+
+## 📋 Project Overview
+Meril Life is a healthcare product and device manufacturing company. The goal was to automate infrastructure provisioning, streamline CI/CD pipelines, and ensure high availability for internal applications running on AWS.
+
+---
+
+## 🧱 Responsibilities
+- Designed and implemented **end-to-end CI/CD pipelines** in **Jenkins** integrated with GitHub and SonarQube.  
+- Automated AWS infrastructure using **Terraform** for EC2, RDS, and VPC networking.  
+- Deployed containerized microservices using **Docker** and **Kubernetes (EKS)**.  
+- Configured **Prometheus + Grafana** dashboards for cluster health, latency, and performance.  
+- Created reusable Terraform modules and ensured remote backend state management with S3.  
+- Performed **IAM** hardening and access audits to comply with healthcare security policies.  
+- Deployed blue-green and rolling update strategies for zero-downtime releases.  
+
+---
+
+## 🛠️ Tech Stack
+**Cloud:** AWS (EC2, S3, EKS, RDS, VPC, CloudWatch)  
+**CI/CD:** Jenkins, GitHub, SonarQube, Maven  
+**IaC & Config Mgmt:** Terraform, Ansible  
+**Containers:** Docker, Kubernetes  
+**Monitoring:** Prometheus, Grafana  
+
+---
+
+## 🧩 Architecture
+![Architecture](architecture.png)
+
+**Flow Summary:**
+1. Developers push code to GitHub → triggers Jenkins pipeline.  
+2. Jenkins builds app, runs SonarQube scan, creates Docker image.  
+3. Terraform provisions infra → EKS, EC2, RDS, IAM, S3.  
+4. Jenkins deploys app to EKS → updates service via rolling strategy.  
+5. Prometheus & Grafana monitor app metrics and alert on anomalies.
+
+---
+
+## 🚀 Outcomes
+- Reduced manual infra setup time by **80%**.  
+- Increased deployment speed and consistency with IaC.  
+- Improved application uptime to **99.9%** with EKS and monitoring.  
+- Strengthened AWS compliance and security posture.
+
+---
+
+## 📂 Repo Structure
+

@@ -1,0 +1,56 @@
+# 🩺 Virtual Health — Cloud Infrastructure & CI/CD Automation
+
+**Role:** DevOps Engineer  
+**Duration:** Jan 2021 – Dec 2022  
+**Domain:** Telehealth Platform  
+**Tools:** AWS, Terraform, Jenkins, Ansible, EKS, SonarQube, Prometheus, Grafana  
+
+---
+
+## 📋 Project Overview
+Virtual Health is a telemedicine platform providing real-time video consultations and patient data analytics. The goal was to modernize deployment workflows, automate AWS infrastructure provisioning, and enable scalable CI/CD pipelines.
+
+---
+
+## 🧱 Responsibilities
+- Built **multi-stage Jenkins pipelines** integrating **GitHub, Maven, and SonarQube**.  
+- Automated creation of AWS VPC, EC2, RDS, and EKS clusters using **Terraform**.  
+- Deployed and configured **Ansible playbooks** for application deployment and configuration management.  
+- Enabled **centralized monitoring** using **Prometheus** and **Grafana** dashboards.  
+- Set up **S3 + CloudFront** for hosting static front-end assets.  
+- Ensured IAM, KMS, and CloudTrail configurations aligned with healthcare data privacy standards.  
+- Collaborated with development and QA teams for environment consistency and faster rollouts.
+
+---
+
+## 🛠️ Tech Stack
+**Cloud:** AWS (EKS, EC2, RDS, S3, Route53, CloudWatch)  
+**CI/CD:** Jenkins, SonarQube, Maven  
+**IaC & Config Mgmt:** Terraform, Ansible  
+**Monitoring:** Prometheus, Grafana  
+**Containerization:** Docker, Kubernetes  
+
+---
+
+## 🧩 Infrastructure Diagram
+![Infrastructure](infra-diagram.png)
+
+**Flow:**
+1. Code pushed to GitHub triggers Jenkins job.  
+2. Jenkins builds app, runs tests, and pushes Docker image to ECR.  
+3. Terraform provisions AWS infra (VPC, EKS, RDS).  
+4. Ansible deploys application on the EKS nodes.  
+5. Prometheus & Grafana track metrics and alert on anomalies.
+
+---
+
+## 🚀 Outcomes
+- Reduced manual configuration drift across environments.  
+- Improved release cycle from weekly to daily.  
+- Achieved **99% uptime** with auto-healing Kubernetes clusters.  
+- Enhanced system observability and on-call efficiency.
+
+---
+
+## 📂 Repo Structure
+
